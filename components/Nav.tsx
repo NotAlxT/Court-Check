@@ -7,12 +7,12 @@ const Nav = () => {
     return (
         <div className="bg-gradient-to-b from-blue-300 flex p-2 justify-between">
 
-            <img src={Hero.src} alt="Image" className='flex justify-start w-10 rounded-md' />
+            <img src={Hero.src} alt="Image" className='flex w-15 rounded-md' />
 
-            <nav className='flex items-end gap-x-5 hover:scale-100'>
-                <a href="#" className=" text-orange-500 " ><Icon icon="fluent:home-16-regular" /></a>
-                <a href="#" className=" text-orange-500"><Icon icon="mdi:about-circle-outline" /></a>
-                <a href="#" className=" text-orange-500"><Icon icon="material-symbols:contact-mail-outline" /></a>
+            <nav className='flex justify-center items-end gap-x-5'>
+                <a href="/" className=" hover:scale-125 hover:bg-orange-100 transition ease-in-out rounded-lg" ><Icon  icon="fluent:home-16-regular" color='orange' width={30} height={30} /></a>
+                <a href="#" className=" hover:scale-125 hover:bg-orange-100 transition ease-in-out rounded-lg"><Icon icon="mdi:about-circle-outline" color='orange' width={30} height={30}/></a>
+                <a href="#" className=" hover:scale-125 hover:bg-orange-100 transition ease-in-out rounded-lg"><Icon icon="material-symbols:contact-mail-outline" color='orange' width={30} height={30}/></a>
             </nav>
         </div>
     );
