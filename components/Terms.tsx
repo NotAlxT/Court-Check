@@ -1,7 +1,7 @@
 const Terms = () => {
     return (
         <div>
-            <p>
+            <p>`
                 Terms of Use Page:
 
                 1. Introduction
@@ -53,7 +53,7 @@ const Terms = () => {
                 14. Contact Information
                 If you have any questions about these Terms, please contact CourtCheck at:
                 Email Address
-                Physical Address
+                Physical Address`
             </p>
         </div>
     );
