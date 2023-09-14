@@ -9,8 +9,8 @@ const Nav = () => {
 
             <img src={Hero.src} alt="Image" className='flex w-15 rounded-md' />
 
-            <nav className='flex justify-center items-end gap-x-5'>
-                <a href="/" className=" hover:scale-125 hover:bg-orange-100 transition ease-in-out rounded-lg" ><Icon  icon="fluent:home-16-regular" color='orange' width={30} height={30} /></a>
+            <nav className='flex justify-center items-end gap-x-5 '>
+                <a href="/" className=" hover:scale-125 hover:bg-orange-100 transition ease-in-out rounded-lg z-3" ><Icon  icon="fluent:home-16-regular" color='orange' width={30} height={30} /></a>
                 <a href="/aboutUs" className=" hover:scale-125 hover:bg-orange-100 transition ease-in-out rounded-lg"><Icon icon="mdi:about-circle-outline" color='orange' width={30} height={30}/></a>
                 <a href="/contact" className=" hover:scale-125 hover:bg-orange-100 transition ease-in-out rounded-lg"><Icon icon="material-symbols:contact-mail-outline" color='orange' width={30} height={30}/></a>
             </nav>
