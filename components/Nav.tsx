@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 
 const Nav = () => {
     return (
-        <div className=" flex p-2 justify-between">
+        <div className=" flex p-2 sticky justify-between">
 
             <img src={Hero.src} alt="Image" className='flex w-15 rounded-md' />
 

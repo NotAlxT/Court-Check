@@ -7,7 +7,7 @@ import '../animation.css'
 const MainContent: React.FC = () => {
     return (
         <div>
-            <div className='absolute h-full w-[50%] bg-black right-0 top-0 opacity-[.2]'>
+            <div className='flex absolute right-[400px] top-0 h-full w-[500px] bg-black opacity-[.2]'>
 
             </div>
             <div className="introHolder mx-auto relative h-full flex flex-col justify-center items-center ">
