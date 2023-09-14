@@ -6,6 +6,7 @@ const About = () => {
                 We believe that everyone should have the opportunity to play basketball, and our app makes it easier than ever to find a court and get a game going. With CourtCheck, you can always find a place to play, no matter where you are.
                 Currently, app is available for free only on iOS. The app is constantly being updated with new features and improvements. It is committed to providing a safe and positive environment for basketball players of all levels.
             </p>
+    
         </div>
     );
 }
