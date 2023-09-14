@@ -5,13 +5,13 @@ const Terms = () => {
                 Terms of Use Page:
 
                 1. Introduction
-                Welcome to CourtCheck. These Terms of Use (the "Terms") govern your use of the CourtCheck mobile app (the "App"). By using the App, you agree to be bound by these Terms.
+                Welcome to CourtCheck. These Terms of Use (the &quot;Terms&quot;) govern your use of the CourtCheck mobile app (the &quot;App&quot;). By using the App, you agree to be bound by these Terms.
 
                 2. Definitions
-                a. "Account" means a user account created on the App.
-                b. "Content" means any information, data, text, images, videos, or other materials that are uploaded, posted, or otherwise made available through the App.
-                c. "Intellectual Property Rights" means all rights, title, and interests in and to all works of authorship, including copyrights, trademarks, patents, trade secrets, and other proprietary rights.
-                d. "User" means any individual who uses the App.
+                a. &quot;Account&quot; means a user account created on the App.
+                b. &quot;Content&quot; means any information, data, text, images, videos, or other materials that are uploaded, posted, or otherwise made available through the App.
+                c. &quot;Intellectual Property Rights&quot; means all rights, title, and interests in and to all works of authorship, including copyrights, trademarks, patents, trade secrets, and other proprietary rights.
+                d. &quot;User&quot; means any individual who uses the App.
 
                 3. License
                 Subject to these Terms, CourtCheck grants you a non-exclusive, non-transferable, revocable license to use the App. You may use the App only for your personal, non-commercial purposes.
@@ -33,7 +33,7 @@ const Terms = () => {
                 The App and all Content are the property of CourtCheck or its licensors and are protected by copyright, trademark, and other intellectual property laws. You agree not to infringe on any of these intellectual property rights.
 
                 8. Disclaimer of Warranties
-                THE APP IS PROVIDED "AS IS" AND COURTCHECK EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+                THE APP IS PROVIDED &quot;AS IS&quot; AND COURTCHECK EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
 
                 9. Limitation of Liability
                 IN NO EVENT SHALL COURTCHECK BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, OR LOSS OF USE, EVEN IF COURTCHECK HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
@@ -53,7 +53,7 @@ const Terms = () => {
                 14. Contact Information
                 If you have any questions about these Terms, please contact CourtCheck at:
                 Email Address
-                Physical Address`
+                Physical Address
             </p>
         </div>
     );
