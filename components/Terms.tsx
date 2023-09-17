@@ -1,7 +1,7 @@
 const Terms = () => {
     return (
         <div>
-            <p>`
+            <p className="text-slate-600">`
                 Terms of Use Page:
 
                 1. Introduction

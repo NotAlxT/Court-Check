@@ -18,7 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: url('../img/basketballbg.jpg');
+  background: white;
   background-repeat: no-repeat;
   background-size: cover;
   /* background: linear-gradient(

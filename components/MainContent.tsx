@@ -14,7 +14,7 @@ const MainContent: React.FC = () => {
                 <div className='flex flex-col absolute top-[300px] left-[500px] max-w-700'>
                     <div className='w-[600px] h-[100px] overflow-hidden '>
                         <div className=" flex justify-center items-center w-full h-full text-black animate-element1 ">
-                            <h3 className='text-7xl font-bold uppercase text-white tracking-wider mb-4'>Court Check</h3>
+                            <h3 className='text-7xl font-bold uppercase text-slate-600 tracking-wider mb-4'>Court Check</h3>
                         </div>
                         <div className=" flex justify-center items-center w-full h-full animate-element2 ">
                             <h3 className='font-cursive text-xl font-semibold text-black'>Developed For Players, By Players</h3>
@@ -23,7 +23,7 @@ const MainContent: React.FC = () => {
                             <img src={Hero.src} alt='' />
                         </div>
                         <div className="introTop flex flex-col justify-center items-center w-full h-full ">
-                            <h1 className='text-7xl font-bold leading-14 uppercase text-white tracking-wider mb-3'> Court Check </h1>
+                            <h1 className='text-7xl font-bold leading-14 uppercase text-slate-600 tracking-wider mb-3'> Court Check </h1>
                             <h4 className='font-bold leading-14'>Find Your Court</h4>
                         </div>
                     </div>
