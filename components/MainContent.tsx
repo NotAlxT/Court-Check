@@ -7,24 +7,21 @@ import '../animation.css'
 const MainContent: React.FC = () => {
     return (
         <div>
-            <div className='flex absolute right-[400px] top-0 h-full w-[500px] bg-black opacity-[.2]'>
-
-            </div>
             <div className="introHolder mx-auto relative h-full flex flex-col justify-center items-center ">
-                <div className='flex flex-col absolute top-[300px] left-[500px] max-w-700'>
+                <div className='flex flex-col absolute top-[200px] left-[400px] max-w-700'>
                     <div className='w-[600px] h-[100px] overflow-hidden '>
                         <div className=" flex justify-center items-center w-full h-full text-black animate-element1 ">
-                            <h3 className='text-7xl font-bold uppercase text-slate-600 tracking-wider mb-4'>Court Check</h3>
+                            <h3 className='text-7xl font-bold uppercase text-[#2C819C] tracking-wider mb-4'>Court Check</h3>
                         </div>
                         <div className=" flex justify-center items-center w-full h-full animate-element2 ">
-                            <h3 className='font-cursive text-xl font-semibold text-black'>Developed For Players, By Players</h3>
+                            <h3 className='font-cursive text-xl font-semibold text-orange-600'>Developed For Players, By Players</h3>
                         </div>
                         <div className=" flex justify-center items-center w-full h-full animate-element3 ">
                             <img src={Hero.src} alt='' />
                         </div>
                         <div className="introTop flex flex-col justify-center items-center w-full h-full ">
-                            <h1 className='text-7xl font-bold leading-14 uppercase text-slate-600 tracking-wider mb-3'> Court Check </h1>
-                            <h4 className='font-bold leading-14'>Find Your Court</h4>
+                            <h1 className='text-7xl font-bold leading-14 uppercase text-[#2C819C] tracking-wider mb-3'> Court Check </h1>
+                            <h4 className='font-bold leading-14 text-orange-600'>Find Your Court</h4>
                         </div>
                     </div>
                 </div>

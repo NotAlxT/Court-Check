@@ -18,9 +18,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: white;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url('../img/Basketballbg2.jpg');
+  background-size: contain cover;
+
   /* background: linear-gradient(
       to bottom,
       transparent,
@@ -28,5 +28,3 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
-
-
