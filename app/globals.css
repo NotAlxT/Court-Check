@@ -20,7 +20,6 @@ body {
   color: rgb(var(--foreground-rgb));
   background: url('../img/Basketballbg2.jpg');
   background-size: contain cover;
-
   /* background: linear-gradient(
       to bottom,
       transparent,
