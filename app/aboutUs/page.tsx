@@ -9,7 +9,6 @@ export default function AboutUs() {
     return (
       <main>
         <Nav />
-        <About />
         <br />
         <Terms />
         <Footer />

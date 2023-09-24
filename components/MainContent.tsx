@@ -3,12 +3,13 @@ import GoogleStore from '../img/GooglePlay.png'
 import Hero from '../img/CourtCheckHero.png'
 import React from 'react';
 import '../animation.css'
+import About from './About';
 
 const MainContent: React.FC = () => {
     return (
         <div>
-            <div className="introHolder mx-auto relative h-full flex flex-col justify-center items-center ">
-                <div className='flex flex-col absolute top-[200px] left-[400px] max-w-700'>
+            <div className="mx-auto relative h-full w-full flex flex-row justify-center right-60  items-center m-40">
+                <div className='flex flex-col max-w-700'>
                     <div className='w-[600px] h-[100px] overflow-hidden '>
                         <div className=" flex justify-center items-center w-full h-full text-black animate-element1 ">
                             <h3 className='text-7xl font-bold uppercase text-[#2C819C] tracking-wider mb-4'>Court Check</h3>
@@ -31,6 +32,9 @@ const MainContent: React.FC = () => {
                     </div>
                 </div>
             </div>
+
+            <About />
+            
         </div>
     );
 }

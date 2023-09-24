@@ -25,7 +25,7 @@ const Nav = () => {
                             Home
                         </span>
                     </div> </a>
-                    <a href="/aboutUs" >
+                    <a href="/terms" >
                         <div className="group relative px-4 cursor-pointer">
 
                             <div className="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500">
@@ -37,7 +37,7 @@ const Nav = () => {
                             </div>
 
                             <span className="absolute -bottom-8 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-black px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
-                                AboutUs
+                                Terms
                             </span>
                         </div>
                     </a>
