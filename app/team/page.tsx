@@ -1,16 +1,14 @@
-import About from "@/components/About";
+import Team from "@/components/Team";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
-import Terms from "@/components/Terms";
 
 
-export default function AboutUsPage() {
+export default function TeamPage() {
 
     return (
       <main>
         <Nav />
-        <br />
-        <Terms />
+        <Team />
         <Footer />
       </main>
     )

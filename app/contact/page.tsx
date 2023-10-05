@@ -1,15 +1,14 @@
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import Nav from "@/components/Nav";
+import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
+import Nav from '@/components/Nav'
+import React from 'react'
 
-
-export default function ContactUs() {
-
-    return (
-      <main>
+export default function ContactPage() {
+  return (
+    <main>
         <Nav />
         <Contact />
         <Footer />
       </main>
-    )
-  }
+  )
+}
