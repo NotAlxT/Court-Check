@@ -4,11 +4,12 @@ import Hero from '../img/CourtCheckHero.png'
 import React from 'react';
 import '../animation.css'
 import About from './About';
+import Store from '@/img/AppStore.png'
 
 const MainContent: React.FC = () => {
     return (
-        <div>
-            <div className="mx-auto relative h-full w-full flex flex-row justify-center right-60  items-center m-40">
+        <div className='flex flex-col'>
+            <div className="mx-auto relative h-[30vh] w-full flex flex-row justify-center right-60  items-center mt-20">
                 <div className='flex flex-col max-w-700'>
                     <div className='w-[600px] h-[100px] overflow-hidden '>
                         <div className=" flex justify-center items-center w-full h-full text-black animate-element1 ">
@@ -33,7 +34,18 @@ const MainContent: React.FC = () => {
                 </div>
             </div>
 
-            <About />
+            
+
+            <div className='bg-[rgba(255,255,255,0)] w-full mt-10 mb-10 pt-10 pb-10'>
+                <About />
+            </div>
+
+            <div className='bg-[rgba(255,255,255,0)] w-full justify-center items-center flex mt-10 mb-10 pt-10 pb-10'>
+                <a className='flex justify-center items-center' href="https://apps.apple.com/app/id1660990394" target='blank'>
+                    <img className='w-[20%]' src={Store.src} alt="App Store" />
+                </a>
+
+            </div>
             
         </div>
     );

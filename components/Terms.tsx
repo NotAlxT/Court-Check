@@ -1,7 +1,7 @@
 const Terms = () => {
     return (
-        <div className="flex w-full justify-center flex-col">
-            <div className="flex w-auto h-auto overflow-auto bg-[rgba(255,178,90,0.3)] rounded-xl backdrop-blur-[10px] p-4 m-5">
+        <div className="flex w-full justify-center items-center flex-col mt-10 mb-10">
+            <div className="flex w-[95rem] h-auto overflow-auto bg-[rgba(255,178,90,0.1)] rounded-xl backdrop-blur-[10px] p-4 m-5">
                 <p className="text-white">
                     Terms of Use:
                     <br />
