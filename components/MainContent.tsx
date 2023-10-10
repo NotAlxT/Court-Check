@@ -8,7 +8,8 @@ import Store from '@/img/AppStore.png'
 
 const MainContent: React.FC = () => {
     return (
-        <div className='flex flex-col'>
+        <div className="flex flex-col  w-full h-full">
+            {/* bg-[url('../img/Basketballbg2.jpg')] bg-cover bg-center */}
             <div className="mx-auto relative h-[30vh] w-full flex flex-row justify-center right-60  items-center mt-20">
                 <div className='flex flex-col max-w-700'>
                     <div className='w-[600px] h-[100px] overflow-hidden '>
