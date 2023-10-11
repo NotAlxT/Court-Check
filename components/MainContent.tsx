@@ -14,7 +14,7 @@ const MainContent: React.FC = () => {
                 <div className='flex flex-col max-w-700'>
                     <div className='w-[600px] h-[100px] overflow-hidden '>
                         <div className=" flex justify-center items-center w-full h-full text-black animate-element1 ">
-                            <h3 className='text-7xl font-bold uppercase text-[#2C819C] tracking-wider mb-4'>Court Check</h3>
+                            <h3 className='text-7xl font-bold text-[#2C819C] tracking-wider mb-4'>CourtCheck</h3>
                         </div>
                         <div className=" flex justify-center items-center w-full h-full animate-element2 ">
                             <h3 className='font-cursive text-xl font-semibold text-orange-600'>Developed For Players, By Players</h3>

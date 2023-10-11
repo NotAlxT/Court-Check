@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <div className="relative">
-            <div className="w-full h-[30vh] bg-[rgba(0,0,0,.7)] flex justify-center">
+            <div className="w-full h-[30vh] bg-[rgba(0,0,0,.9)] flex justify-center">
                 <footer className="footer-basic pt-[40px] pb[40px] flex flex-col items-center gap-5">
 
                     <div className="social pb-[25px] text-center flex flex-row gap-5">
@@ -12,12 +12,11 @@ const Footer = () => {
                             </div>
                     <ul className="list-inline p-0 text-center text-base leading-6 mb-0 flex flex-row ">
                         <li className="list-inline-item pl-[10px] pr-[10px] opacity-80 hover:opacity-100"><a href="#">Home</a></li>
-                        <li className="list-inline-item pl-[10px] pr-[10px] opacity-80 hover:opacity-100"><a href="#">Services</a></li>
                         <li className="list-inline-item pl-[10px] pr-[10px] opacity-80 hover:opacity-100"><a href="#">About</a></li>
                         <li className="list-inline-item pl-[10px] pr-[10px] opacity-80 hover:opacity-100"><a href="/terms">Terms</a></li>
                         <li className="list-inline-item pl-[10px] pr-[10px] opacity-80 hover:opacity-100"><a href="#">Privacy Policy</a></li>
                     </ul>
-                    <p className="copyright flex mt-10">Court Check © 2023</p>
+                    <p className="copyright flex mt-10">CourtCheck © 2023</p>
                 </footer>
 
             </div>
