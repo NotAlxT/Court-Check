@@ -118,7 +118,7 @@ const Terms = () => {
                     <div className="w-[50%] flex self-center">
                         <ol>
                             <li>
-                            ○ We may update this Privacy Policy from time to time. If we make any changes, we will notify users by updating the &quot;Last Updated&quot; date at the top of this page.
+                            ○ We may update this Privacy Policy from time to time. If we make any changes, we will notify users by updating the &quot;Last Updated&quot; date on the App.
                             </li>
                         </ ol>
                     </div>
