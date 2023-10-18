@@ -7,7 +7,7 @@ export default function Contact() {
 
         <div className='flex flex-col gap-2'>
           <div className='flex justify-center mb-10'>
-            <h1 className='text-2xl'>Contact Us</h1>
+            <h1 className='text-2xl text-white'>Contact Us</h1>
           </div>
 
           <div className="flex flex-row mb-10">

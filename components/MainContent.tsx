@@ -5,25 +5,26 @@ import React from 'react';
 import '../animation.css'
 import About from './About';
 import Store from '@/img/AppStore.png'
+import Download from './Download';
 
 const MainContent: React.FC = () => {
     return (
         <div className="flex flex-col  w-full h-full">
             {/* bg-[url('../img/Basketballbg2.jpg')] bg-cover bg-center */}
-            <div className="mx-auto relative h-[30vh] w-full flex flex-row justify-center right-60  items-center mt-20">
+            <div className="mx-auto relative h-[30vh] w-full flex flex-row justify-around items-center mt-[10rem]">
                 <div className='flex flex-col max-w-700'>
                     <div className='w-[600px] h-[100px] overflow-hidden '>
                         <div className=" flex justify-center items-center w-full h-full text-black animate-element1 ">
-                            <h3 className='text-7xl font-bold text-[#2C819C] tracking-wider mb-4'>CourtCheck</h3>
+                            <h3 className='text-7xl font-bold text-[#2C819C] tracking-wider mb-4 uppercase cursor-none'>CourtCheck</h3>
                         </div>
                         <div className=" flex justify-center items-center w-full h-full animate-element2 ">
-                            <h3 className='font-cursive text-xl font-semibold text-orange-600'>Developed For Players, By Players</h3>
+                            <h3 className='font-cursive text-xl font-semibold text-orange-600 cursor-none'>Developed For Players, By Players</h3>
                         </div>
-                        <div className=" flex justify-center items-center w-full h-full animate-element3 ">
+                        <div className=" flex justify-center items-center w-full h-full animate-element3 cursor-none">
                             <img src={Hero.src} alt='' />
                         </div>
                         <div className="introTop flex flex-col justify-center items-center w-full h-full ">
-                            <h1 className='text-7xl font-bold leading-14 uppercase text-[#2C819C] tracking-wider mb-3'> Court Check </h1>
+                            <h1 className='text-7xl font-bold leading-14 uppercase text-[#2C819C] tracking-wider mb-3 cursor-none'>CourtCheck</h1>
                             <h4 className='font-bold leading-14 text-orange-600'>Find Your Court</h4>
                         </div>
                     </div>
@@ -33,21 +34,19 @@ const MainContent: React.FC = () => {
 
                     </div>
                 </div>
+                <div>
+                    <Download />
+                </div>
             </div>
 
-            
+
+
+
 
             <div className='bg-[rgba(255,255,255,0)] w-full mt-10 mb-10 pt-10 pb-10'>
                 <About />
             </div>
 
-            <div className='bg-[rgba(255,255,255,0)] w-full justify-center items-center flex mt-10 mb-10 pt-10 pb-10'>
-                <a className='flex justify-center items-center' href="https://apps.apple.com/app/id1660990394" target='blank'>
-                    <img className='w-[20%]' src={Store.src} alt="App Store" />
-                </a>
-
-            </div>
-            
         </div>
     );
 }

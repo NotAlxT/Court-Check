@@ -6,7 +6,7 @@ const Nav = () => {
     return (
         <div className=" flex w-full p-2 fixed justify-between z-10">
 
-            <img src={Hero.src} alt="Image" className='flex w-15 rounded-md' />
+            <img src={Hero.src} alt="Image" className='flex w-[7rem] rounded-md' />
 
             <div className="flex flex-col">
                 <div className="border text-orange-600 py-3 flex gap-1 shadow-xl rounded-md ">

@@ -16,7 +16,7 @@ const Footer = () => {
                         <li className="list-inline-item pl-[10px] pr-[10px] opacity-80 hover:opacity-100 text-white"><a href="/terms">Terms</a></li>
                         <li className="list-inline-item pl-[10px] pr-[10px] opacity-80 hover:opacity-100 text-white"><a href="#">Privacy Policy</a></li>
                     </ul>
-                    <p className="copyright flex mt-10">CourtCheck © 2023</p>
+                    <p className="copyright flex mt-10 text-white">CourtCheck © 2023</p>
                 </footer>
 
             </div>

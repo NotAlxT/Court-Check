@@ -74,7 +74,7 @@ const Team = () => {
                         </svg>
                     </div>
                     <div className="group-hover:pb-10 transition-all duration-500 delay-200">
-                        <h1 className="font-semibold text-gray-700">Jun jie Chen</h1>
+                        <h1 className="font-semibold text-gray-700">Jun Jie Chen</h1>
                         <p className="text-gray-500 text-sm">@Senior-App-Developer</p>
                     </div>
                     <div className="flex items-center transition-all duration-500 delay-200 group-hover:bottom-3 -bottom-full absolute gap-2 justify-evenly w-full">

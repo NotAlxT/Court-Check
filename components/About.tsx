@@ -2,7 +2,7 @@ const About = () => {
     return (
         <div className="flex justify-center mt-10">
             <div className="flex w-[70%] h-[50vh] overflow-auto bg-[rgba(0,0,0,0.074)] justify-center items-center rounded-xl backdrop-blur-[10px]">
-                <p className="w-[90%] text-white font-bold text-xl">
+                <p className="w-[90%] text-white font-bold text-xl leading-[3rem]">
                 &quot;
                     CourtCheck is a mobile app that helps you find nearby basketball courts, invite friends to play, and request players for pickup games. Our app uses your location to find courts in your area, and we also provide live-feeds on how crowded the courts are. So whether you&apos;re looking for a quick game of hoops with friends or a more competitive pickup game, CourtCheck has you covered.
                     We believe that everyone should have the opportunity to play basketball, and our app makes it easier than ever to find a court and get a game going. With CourtCheck, you can always find a place to play, no matter where you are.

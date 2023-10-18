@@ -12,6 +12,7 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
           'app-store': "url('/img/AppStore.png')",
+          'custom-gradient': 'linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84))',
       },
     },
   },

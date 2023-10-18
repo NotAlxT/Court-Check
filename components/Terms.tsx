@@ -1,9 +1,9 @@
 const Terms = () => {
     return (
-        <div className="flex w-full justify-center items-center flex-col mt-10 mb-10">
-            <div className="flex w-[95rem] h-auto overflow-auto bg-[rgba(255,178,90,0.1)] rounded-xl backdrop-blur-[10px] p-4 m-5">
-                <p className="text-white">
-                    Terms of Use:
+        <div className="flex w-full justify-around flex-row mt-10 mb-10">
+            <div className="flex w-[45%] h-auto overflow-auto bg-[rgba(184,184,184,0.1)] rounded-xl backdrop-blur-[10px] mt-[10rem] p-5 border ">
+                <p className="text-white flex justify-center items-center flex-col">
+                    <h1>Terms of Use:</h1>
                     <br />
                     1. Introduction
                     Welcome to CourtCheck. These Terms of Use (the &quot;Terms&quot;) govern your use of the CourtCheck mobile app (the &quot;App&quot;). By using the App, you agree to be bound by these Terms.
@@ -62,13 +62,78 @@ const Terms = () => {
                     <br /><br />
                     14. Contact Information<br />
                     If you have any questions about these Terms, please contact CourtCheck at:
-                    <br />Email Address
-                    <br />Physical Address
+                    <br />
+                    <br />
+                    CourtCheckTeam@gmail.com
                 </p>
             </div>
 
-            
-         
+            <div className="flex w-[45%] h-auto overflow-auto bg-[rgba(255,178,90,0.1)] rounded-xl backdrop-blur-[10px] mt-[10rem] p-5 border">
+                <p className="text-white flex flex-col ">
+                    <h1 className="self-center">Privacy Policy:</h1>
+                    <br />
+                    <br />
+                    At CourtCheck, we are committed to protecting the privacy of our users. This Privacy Policy outlines the information we request user permissions for and how we use it. Information Use:
+                    <br />
+                    <br />
+                    <div className="w-[50%] flex self-center">
+                        <ol>
+                            <li>
+                            ○ We request the user's current location to showcase a list of basketball courts around them and provide live traffic information such as the number of people currently at a certain court or the availability of a court.
+                            </li>
+                            <br />
+                            <li>
+                            ○ The app allows users to check-in and check-out of the courts, in which case we request permission of the user's location data of the court and the time of check-in and check-out.
+                            </li>
+                        </ ol>
+                    </div>
+                    <br />
+                    This information is used to provide and improve our service. We may also use this information to personalize the content and advertising displayed to users. Sharing of Information:
+                    <br />
+                    <br />
+                    <div className="w-[50%] flex self-center">
+                        <ol>
+                            <li>
+                            ○ We do not share any personally identifiable information with third parties for their promotional or marketing use. However, in the future, if we decide to sell user data to third-party vendors, we will update this Privacy Policy and obtain explicit consent from our users. We will also provide clear opt-out options for those who do not wish to have their data shared with third-party vendors. Additionally, we will only share non-personally identifiable information or aggregate data that cannot be traced back to an individual user.
+                            </li>
+                            <br />
+                            <li>
+                            ○ We may disclose information as required by law or in the good faith belief that such action is necessary to comply with legal process or protect the safety of our users or the public.
+                            </li>
+                        </ ol>
+                    </div>
+                    <br />
+                    <h1 className="self-center">Security:</h1>
+                    <br />
+                    <div className="w-[50%] flex self-center">
+                        <ol>
+                            <li>
+                            ○ We take reasonable precautions to protect personal information from loss, misuse, and unauthorized access, disclosure, alteration, and destruction.
+                            </li>
+                        </ ol>
+                    </div>
+                    <br />
+                    <h1 className="self-center">Changes to this Policy:</h1>
+                    <br />
+                    <div className="w-[50%] flex self-center">
+                        <ol>
+                            <li>
+                            ○ We may update this Privacy Policy from time to time. If we make any changes, we will notify users by updating the "Last Updated" date at the top of this page.
+                            </li>
+                        </ ol>
+                    </div>
+                    <br />
+
+                    Contact Us at courtcheckteam@gmail.com
+                    <br />
+                    <br />
+                    By using our service, you consent to our Privacy Policy.
+
+
+                </p>
+            </div>
+
+
         </div>
     );
 }
