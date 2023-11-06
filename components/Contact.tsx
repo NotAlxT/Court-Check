@@ -1,23 +1,44 @@
 'use client'
 
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
 
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
+  const [isMessageVisible, setMessageVisble] = useState(false)
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_980fem4', 'template_uqgzwci', form.current, '4ENKveL9YGGu3p2w-')
-      .then((result) => {
-        console.log(result.text);
-        console.log('message sent')
-      }, (error) => {
-        console.log(error.text);
-      });
+    if (form.current) {
+      emailjs
+        .sendForm('service_980fem4', 'template_uqgzwci', form.current, '4ENKveL9YGGu3p2w-')
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log('message sent');
+            setMessageVisble(true);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      form.current.reset();
+    }
   };
+
+  useEffect(() => {
+    if(isMessageVisible) {
+      const timer = setTimeout(() => {
+        setMessageVisble(false)
+      }, 3000)
+
+      return () => {
+        clearTimeout(timer)
+      }
+    }
+  }, [isMessageVisible])
 
   return (
     <>
@@ -39,10 +60,10 @@ export default function Contact() {
 
           </div>
           <div>
-            Or Message Us Here 
+            Or Message Us Here
           </div>
 
-          <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-10'>
+          <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-10 relative'>
             <div className='flex flex-col'>
               <label className='text-white'>Name</label>
               <input className='rounded text-black p-2' type="text" name="user_name" />
@@ -61,6 +82,11 @@ export default function Contact() {
             <button className=' bg-[rgba(36,36,36,0.34)] rounded hover:bg-[rgba(253,253,253,0.7)]' type="submit" value="Send">
               Send
             </button>
+            {isMessageVisible && (
+              <div className='flex absolute bottom-40 bg-[rgba(0,0,0,0.44)] rounded w-full h-[70px] p-2 justify-center items-center text-center'>
+                Thank you! Your Message Has Been Recived!
+              </div>
+            )}
           </form>
 
         </div>
