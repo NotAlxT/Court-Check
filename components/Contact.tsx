@@ -42,23 +42,23 @@ export default function Contact() {
             Or Message Us Here 
           </div>
 
-          <form ref={form} onSubmit={sendEmail} className='flex flex-col'>
-            <div>
-              <label>Name</label>
-              <input type="text" name="user_name" />
+          <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-10'>
+            <div className='flex flex-col'>
+              <label className='text-white'>Name</label>
+              <input className='rounded text-black p-2' type="text" name="user_name" />
             </div>
 
-            <div>
-              <label>Email</label>
-              <input type="email" name="user_email" />
+            <div className='flex flex-col'>
+              <label className='text-white'>Email</label>
+              <input className='rounded text-black p-2' type="email" name="user_email" />
             </div>
 
-            <div>
-              <label>Message</label>
-              <textarea name="message" />
+            <div className='flex flex-col w-[400px] h-[200px]'>
+              <label className='text-white'>Message</label>
+              <textarea className='rounded text-black p-2 h-full' name="message" />
             </div>
 
-            <button type="submit" value="Send">
+            <button className=' bg-[rgba(36,36,36,0.34)] rounded hover:bg-[rgba(253,253,253,0.7)]' type="submit" value="Send">
               Send
             </button>
           </form>
