@@ -6,6 +6,7 @@ import '../animation.css'
 import About from './About';
 import Store from '@/img/AppStore.png'
 import Download from './Download';
+import Phone from './Phone';
 
 const MainContent: React.FC = () => {
     return (
@@ -23,18 +24,18 @@ const MainContent: React.FC = () => {
                         <div className=" flex justify-center items-center w-full h-full animate-element3 cursor-none">
                             <img src={Hero.src} alt='' />
                         </div>
-                        <div className="introTop flex flex-col justify-center items-center w-full h-full ">
+                        <div className="flex flex-col justify-center items-center w-full h-full ">
                             <h1 className='text-7xl font-bold leading-14 uppercase text-[#2C819C] tracking-wider mb-3 cursor-none'>CourtCheck</h1>
                             <h4 className='font-bold leading-14 text-orange-600'>Find Your Court</h4>
                         </div>
                     </div>
                 </div>
-                <div className="introDes absolute top-[400px] left-[700px]">
+                <div className="absolute top-[400px] left-[700px]">
                     <div className='flex flex-col justify-center items-center'>
 
                     </div>
                 </div>
-                <div>
+                <div className='flex justify-center items-center'>
                     <Download />
                 </div>
             </div>
@@ -45,6 +46,10 @@ const MainContent: React.FC = () => {
 
             <div className='bg-[rgba(255,255,255,0)] w-full mt-10 mb-10 pt-10 pb-10'>
                 <About />
+            </div>
+
+            <div className=''>
+                <Phone />
             </div>
 
         </div>
