@@ -48,7 +48,7 @@ const MainContent: React.FC = () => {
                 <About />
             </div>
 
-            <div className=' flex justify-center items-center'>
+            <div className=' flex justify-center items-center mb-[100px]'>
                 <Phone />
             </div>
 

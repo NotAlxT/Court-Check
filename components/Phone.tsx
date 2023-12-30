@@ -1,139 +1,77 @@
 'use client'
 
-import React, {useState} from 'react'
+import React, { useEffect, useState } from 'react';
 
-import appSS from '../img/appSS.png'
+import appSS from '../img/appSS.png';
+
+type TransformStyle = 'preserve-3d' | 'flat';
 
 export default function Phone() {
 
-const [counter, setCounter] = useState<number>(0);
+    const [counter, setCounter] = useState<number>(0);
 
-  const handleMouseWheel = (event: React.WheelEvent) => {
-    if (event.deltaY > 0)  {
-      setCounter((prevCounter) => Math.max(prevCounter - 10));
-    } else {
-      setCounter((prevCounter) => Math.min(prevCounter + 10));
+    const incrementCounter = () => {
+        setCounter((prevCounter) => prevCounter + .1)
     }
-  };
+    
+    const decrementCounter = () => {
+        setCounter((prevCounter) => Math.max(prevCounter - 10, 0))
+    }
 
-  const galleryStyle = {
-    transform: `rotateX(-8deg) rotateY(${counter}deg)`,
-    transformStyle: 'preserve-3d',
-  };
+    useEffect(() => {
+        const timer= setInterval(() => {
+            incrementCounter()
+        }, 10)
 
-  const galleryContainerStyle = {
-    transformStyle: 'preserve-3d',
-  };
+        return () => clearInterval(timer)
+    }, [])
+
+    const galleryStyle = {
+        transformStyle: 'preserve-3d' as TransformStyle,
+        transform: `rotateX(0deg) rotateY(${counter}deg)`
+    };
+
+    const galleryContainerStyle = {
+        transform: 'rotateX(2deg) rotateY(0deg) preserve-3d',
+        transformStyle: 'preserve-3d' as TransformStyle,
+    };
 
     return (
         <div className='flex h-[700px] w-1/2 justify-center items-center'>
-            <div className="relative w-[200px] h-1/2" style={galleryStyle} 
-            onWheel={handleMouseWheel}
-            >
-                <div className=" w-300 h-200 relative transition-all duration-2000 ease-in-out" style={{transform: 'rotateX(-4deg) rotateY(0deg)',...galleryContainerStyle }} >
-                    <div className="w-full h-full absolute bg-center bg-middle bg-cover " style={{ transform: 'rotateY(0deg) translateZ(400px)'}}>
+            <div className="relative w-[200px] h-1/2" style={{...galleryStyle}}>
+                <div className="flex w-300 h-200 relative transition-all duration-2000 ease-in-out " style={{...galleryContainerStyle}} >
+                    <div className="w-[250px] h-full absolute bg-center bg-middle bg-cover " style={{ transform: 'rotateY(0deg) translateZ(400px)' }}>
+                        <img className='flex justify-center items-center rounded-[20px]' src={appSS.src} alt="" />
+                    </div>
+
+                    <div className='bg-[#1d1d1d] w-[250px] h-[543px] absolute bg-center bg-middle bg-cover rounded-[20px] flex justify-center items-center' style={{ transform: 'rotateY(0deg) translateZ(390px)' }}> </div>
+
+                    <div className="w-[250px] h-full absolute bg-center bg-middle bg-cover " style={{ transform: 'rotateY(72deg) translateZ(400px) rotateX(0deg)' }}>
+                        <img className='rounded-[20px]' src={appSS.src} alt="" />
+
+                    </div>
+
+                    <div className='bg-[#1d1d1d] w-[250px] h-[543px] absolute bg-center bg-middle bg-cover rounded-[20px] flex justify-center items-center' style={{ transform: 'rotateY(72deg) translateZ(390px)' }}> </div>
+
+                    <div className="w-[250px] h-full absolute bg-center bg-middle bg-cover" style={{ transform: 'rotateY(144deg) translateZ(400px)' }}>
                         <img className='rounded-[20px]' src={appSS.src} alt="" />
                     </div>
 
-                    <div className="w-full h-full absolute bg-center bg-middle bg-cover" style={{ transform: 'rotateY(72deg) translateZ(400px) rotateX(0deg)'}}>
-                        <img className='rounded-[20px]' src={appSS.src} alt="" />
-                        
-                    </div>
-                    
-                    <div className="w-full h-full absolute bg-center bg-middle bg-cover" style={{ transform: 'rotateY(144deg) translateZ(400px)'}}>
+                    <div className='bg-[#1d1d1d] w-[250px] h-[543px] absolute bg-center bg-middle bg-cover rounded-[20px] flex justify-center items-center' style={{ transform: 'rotateY(144deg) translateZ(390px)' }}> </div>
+
+                    <div className="w-[250px] h-full absolute bg-center bg-middle bg-cover" style={{ transform: 'rotateY(216deg) translateZ(400px)' }}>
                         <img className='rounded-[20px]' src={appSS.src} alt="" />
                     </div>
 
-                    <div className="w-full h-full absolute bg-center bg-middle bg-cover" style={{ transform: 'rotateY(216deg) translateZ(400px)'}}>
+                    <div className='bg-[#1d1d1d] w-[250px] h-[543px] absolute bg-center bg-middle bg-cover rounded-[20px] flex justify-center items-center' style={{ transform: 'rotateY(216deg) translateZ(390px)' }}> </div>
+
+                    <div className="w-[250px] h-full absolute bg-center bg-middle bg-cover" style={{ transform: 'rotateY(288deg) translateZ(400px)' }}>
                         <img className='rounded-[20px]' src={appSS.src} alt="" />
                     </div>
 
-                    <div className="w-full h-full absolute bg-center bg-middle bg-cover" style={{ transform: 'rotateY(288deg) translateZ(400px)'}}>
-                        <img className='rounded-[20px]' src={appSS.src} alt="" />
-                    </div>
+                    <div className='bg-[#1d1d1d] w-[250px] h-[543px] absolute bg-center bg-middle bg-cover rounded-[20px] flex justify-center items-center' style={{ transform: 'rotateY(288deg) translateZ(390px)' }}> </div>
                 </div>
             </div>
-
-
-
-
-            {/* <div className='flex gap-10 flex-row  rounded-[10px] p-10 min-w-full overflow-x-hidden overflow-y-hidden '>
-                <div className="phoneContainer w-[190px] h-[406px] bg-black rounded-[20px] relative flex justify-center items-center">
-                    <div className="screen w-[186px] h-[400px] bg-[rgb(212,212,212)] rounded-[20px] flex justify-center items-end ">
-                        <div className=''>
-                            <div className="camera w-[80px] bg-black absolute h-[20px] top-[4%] right-[30%] rounded-[25px]"></div>
-                        </div>
-                        <div className="messageContainer bg-white w-[185px] h-[340px] rounded-b-[20px] flex flex-col gap-2 pl-1 pt-2 pr-1 relative" >
-                            <div className='flex h-[30px] w-[30%] bg-[rgb(231,231,231)] rounded-xl justify-center items-center text-black font-semibold'> Yo?</div>
-                            <div className='flex h-[30px] w-[50%] bg-[rgb(231,231,231)] rounded-xl justify-center items-center text-black font-semibold'> Ball up?</div>
-                            <div className='flex self-end h-[30px] w-[40%] bg-[rgb(82,144,255)] rounded-xl justify-center items-center text-white font-semibold'> Yeah!</div>
-                            <div className='flex h-[30px] w-[70%] bg-[rgb(231,231,231)] rounded-xl justify-center items-center text-black font-semibold'> CourtCheck?</div>
-                            <div className='flex self-end h-[30px] w-[60%] bg-[rgb(82,144,255)] rounded-xl justify-center items-center text-white font-semibold'> Checked In!</div>
-                            <div className='flex self-end h-[30px] w-[100%] bg-[rgb(82,144,255)] rounded-xl justify-center items-center text-white font-semibold'> 5 v 5 @ Peter&apos;s Court</div>
-                        </div>
-                        <div className='phoneBlkLine absolute bottom-2 rounded-xl w-[100px] h-[5px] bg-black'>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div className="phoneContainer w-[190px] h-[406px] bg-black rounded-[20px] relative flex justify-center items-center">
-                    <div className="screen w-[186px] h-[400px] bg-[rgb(255,255,255)] rounded-[20px] flex justify-center items-end relative">
-                        <div className='w-[100%] h-[100%]'>
-                            <img className='rounded-[20px]' src={appSS.src} alt="" />
-                        </div>
-
-                    </div>
-                </div>
-                <div className="phoneContainer w-[190px] h-[406px] bg-black rounded-[20px] relative flex justify-center items-center">
-                    <div className="screen w-[186px] h-[400px] bg-[rgb(255,255,255)] rounded-[20px] flex justify-center items-end relative">
-                        <div className='w-[100%] h-[100%]'>
-                            <img className='rounded-[20px]' src={appSS.src} alt="" />
-                        </div>
-
-                    </div>
-                </div>
-                <div className="phoneContainer w-[190px] h-[406px] bg-black rounded-[20px] relative flex justify-center items-center">
-                    <div className="screen w-[186px] h-[400px] bg-[rgb(255,255,255)] rounded-[20px] flex justify-center items-end relative">
-                        <div className='w-[100%] h-[100%]'>
-                            <img className='rounded-[20px]' src={appSS.src} alt="" />
-                        </div>
-
-                    </div>
-                </div>
-                <div className="phoneContainer w-[190px] h-[406px] bg-black rounded-[20px] relative flex justify-center items-center">
-                    <div className="screen w-[186px] h-[400px] bg-[rgb(255,255,255)] rounded-[20px] flex justify-center items-end relative">
-                        <div className='w-[100%] h-[100%]'>
-                            <img className='rounded-[20px]' src={appSS.src} alt="" />
-                        </div>
-
-                    </div>
-                </div>
-                <div className="phoneContainer w-[190px] h-[406px] bg-black rounded-[20px] relative flex justify-center items-center">
-                    <div className="screen w-[186px] h-[400px] bg-[rgb(255,255,255)] rounded-[20px] flex justify-center items-end relative">
-                        <div className='w-[100%] h-[100%]'>
-                            <img className='rounded-[20px]' src={appSS.src} alt="" />
-                        </div>
-
-                    </div>
-                </div>
-                <div className="phoneContainer w-[190px] h-[406px] bg-black rounded-[20px] relative flex justify-center items-center">
-                    <div className="screen w-[186px] h-[400px] bg-[rgb(255,255,255)] rounded-[20px] flex justify-center items-end relative">
-                        <div className='w-[100%] h-[100%]'>
-                            <img className='rounded-[20px]' src={appSS.src} alt="" />
-                        </div>
-
-                    </div>
-                </div>
-                <div className="phoneContainer w-[190px] h-[406px] bg-black rounded-[20px] relative flex justify-center items-center">
-                    <div className="screen w-[186px] h-[400px] bg-[rgb(255,255,255)] rounded-[20px] flex justify-center items-end relative">
-                        <div className='w-[100%] h-[100%]'>
-                            <img className='rounded-[20px]' src={appSS.src} alt="" />
-                        </div>
-
-                    </div>
-                </div>
-            </div> */}
         </div>
     )
 }
