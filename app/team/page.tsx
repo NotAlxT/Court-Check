@@ -9,7 +9,7 @@ export default function TeamPage() {
       <main>
         <Nav />
         <Team />
-        <Footer />
+      
       </main>
     )
   }

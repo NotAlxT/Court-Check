@@ -11,7 +11,7 @@ export default function AboutUsPage() {
         <Nav />
         <br />
         <Terms />
-        <Footer />
+       
       </main>
     )
   }
