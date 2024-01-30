@@ -26,3 +26,228 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+
+@keyframes anim {
+  to {
+      margin-top: -100px;
+  }
+}
+
+@keyframes anim2 {
+  to {
+      transform: translateY(-100%);
+  }
+}
+
+.animate-element {
+  animation: anim2 1.5s cubic-bezier(0.19, 1, 0.22, 1) 7s both;
+}
+
+.animate-element1 {
+  animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 1.5s both;
+}
+
+.animate-element2 {
+  animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
+}
+
+.animate-element3 {
+  animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 4.5s both;
+}
+
+@keyframes circleBounce {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.animate-ball{
+  animation: circleBounce .5s alternate infinite ease;
+}
+
+.animate-shadow{
+  animation: shadowBounce .5s alternate infinite ease;
+}
+
+@keyframes shadowBounce {
+  0% {
+    transform: scaleX(1.5);
+  }
+
+  40% {
+    transform: scaleX(1);
+    opacity: .7;
+  }
+
+  100% {
+    transform: scaleX(.2);
+    opacity: .4;
+  }
+}
+
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 30%,
+    white 70%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 30%, white 70%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, infinite)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 30s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+.scroller:hover .scroller__inner {
+  animation-play-state: paused;
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-44%);
+  }
+}
+
+.reflect {
+  -webkit-box-reflect: left -80px linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, .4));
+}
+
+.card1 {
+  width: 200px;
+  height: 200px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 200px;
+  height: 200px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.facebook {
+  fill: #1877F2;
+}
+
+.card3 {
+  width: 200px;
+  height: 200px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  
+}
+
+.card4 {
+  width: 200px;
+  height: 200px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.linkedin {
+  fill: #0A66C2;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .facebook {
+  fill: black;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #0A66C2;
+}
+
+.card3:hover .linkedin {
+  fill: black;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #242424;
+}
+
+.card4:hover .appStore {
+  fill: white;
+}
