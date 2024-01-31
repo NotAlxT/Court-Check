@@ -5,11 +5,11 @@ import Nav from "@/components/Nav";
 
 export default function TeamPage() {
 
-    return (
-      <main>
-        <Nav />
-        <Team />
-      
-      </main>
-    )
-  }
+  return (
+    <main>
+      <Nav />
+      <Team />
+      <Footer />
+    </main>
+  )
+}

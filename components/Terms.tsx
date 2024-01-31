@@ -1,8 +1,8 @@
 const Terms = () => {
     return (
-        <div className="flex w-full justify-around flex-row mt-10 mb-10">
+        <div className="flex justify-around flex-row mt-10 mb-10 ml-[150px]">
             <div className="flex w-[45%] h-auto overflow-auto bg-[rgba(184,184,184,0.1)] rounded-xl backdrop-blur-[10px] mt-[10rem] p-5 border ">
-                <p className="text-white flex justify-center items-center flex-col">
+                <div className="text-white flex justify-center items-center flex-col">
                     <h1>Terms of Use:</h1>
                     <br />
                     1. Introduction
@@ -65,11 +65,11 @@ const Terms = () => {
                     <br />
                     <br />
                     CourtCheckTeam@gmail.com
-                </p>
+                </div>
             </div>
 
             <div className="flex w-[45%] h-auto overflow-auto bg-[rgba(255,178,90,0.1)] rounded-xl backdrop-blur-[10px] mt-[10rem] p-5 border">
-                <p className="text-white flex flex-col ">
+                <div className="text-white flex flex-col ">
                     <h1 className="self-center">Privacy Policy:</h1>
                     <br />
                     <br />
@@ -130,7 +130,7 @@ const Terms = () => {
                     By using our service, you consent to our Privacy Policy.
 
 
-                </p>
+                </div>
             </div>
 
 

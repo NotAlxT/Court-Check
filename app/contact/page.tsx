@@ -8,6 +8,7 @@ export default function ContactPage() {
     <main>
         <Nav />
         <Contact />
+        <Footer />
       </main>
   )
 }

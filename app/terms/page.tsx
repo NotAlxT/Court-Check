@@ -9,7 +9,7 @@ export default function TermsPage() {
       <main>
         <Nav />
         <Terms />
-        
+        <Footer />
       </main>
     )
   }
