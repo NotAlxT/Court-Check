@@ -2,11 +2,15 @@ import AlexLei from '@/img/AlexLie.png'
 import Sai from '@/img/Sai.png'
 import JunJie from '@/img/JunJie.png'
 import AlexTran from '@/img/AlexTran.png'
+import Download from './Download'
 
 
 const Team = () => {
     return (
         <div className="flex justify-center">
+            <div className='fixed flex flex-col right-0 pr-20 pt-10 z-30'>
+                <Download />
+            </div>
             <h1 className='absolute bottom-10 left-72 bold text-4xl '>Meet the Team.</h1>
             <div className="flex flex-col min-h-screen relative items-center justify-center w-[50rem] gap-10">
 

@@ -1,7 +1,12 @@
+import Download from "./Download";
+
 const Terms = () => {
     return (
-        <div className="flex justify-around flex-row mt-10 mb-10 ml-[150px]">
-            <div className="flex w-[45%] h-auto overflow-auto bg-[rgba(184,184,184,0.1)] rounded-xl backdrop-blur-[10px] mt-[10rem] p-5 border ">
+        <div className="flex justify-around flex-row flex-wrap mt-10 mb-10 ml-[150px]">
+            <div className='fixed flex flex-col right-0 pr-20 pt-10 z-30'>
+                <Download />
+            </div>
+            <div className="flex w-[45%] min-w-[400px] h-auto overflow-auto bg-[rgba(184,184,184,0.1)] rounded-xl backdrop-blur-[10px] mt-[10rem] p-5 border ">
                 <div className="text-white flex justify-center items-center flex-col">
                     <h1>Terms of Use:</h1>
                     <br />
@@ -68,7 +73,7 @@ const Terms = () => {
                 </div>
             </div>
 
-            <div className="flex w-[45%] h-auto overflow-auto bg-[rgba(255,178,90,0.1)] rounded-xl backdrop-blur-[10px] mt-[10rem] p-5 border">
+            <div className="flex w-[45%] min-w-[400px] h-auto overflow-auto bg-[rgba(255,178,90,0.1)] rounded-xl backdrop-blur-[10px] mt-[10rem] p-5 border">
                 <div className="text-white flex flex-col ">
                     <h1 className="self-center">Privacy Policy:</h1>
                     <br />
