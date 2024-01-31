@@ -2,13 +2,13 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className="flex justify-center items-center w-[80%]  rounded-3xl gap-2">
+        <div className="flex justify-center items-center w-[80%] flex-wrap rounded-3xl gap-2">
             <div className="flex justify-center items-center mt-10 mb-10 min-h-[900px] w-[60%] rounded-xl backdrop-blur-[10px]  z-0 ">
                 <div className="flex flex-col gap-1 w-[600px] h-[600px] min-h-[500px] min-w-[500px]  overflow-auto justify-center items-center">
                     <div className="up flex flex-row gap-1">
                         <a href="https://www.instagram.com/court_check/?fbclid=IwAR3o-pDQkpKy0-GiATLRhiZi7i6X9TPB2bMc3-vZK_Zr43fUrOzOH2YXVIk" target='_blank'>
                             <button className="card1 pl-10 pt-12">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,256,256" width="4rem" height="4rem" fill-rule="nonzero" className="instagram"><g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(8,8)"><path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path></g></g></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,256,256" width="5rem" height="5rem" fill-rule="nonzero" className="instagram"><g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(8,8)"><path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path></g></g></svg>
                             </button>
                         </a>
                         <a href="https://www.facebook.com/profile.php?id=61553710550399" target="_blank">
@@ -32,7 +32,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center items-center mt-10 mb-10 min-h-[900px] w-[30%] rounded-xl backdrop-blur-[10px] border  bg-[#000000] z-0">
+            <div className="flex justify-center items-center mt-10 mb-10 min-h-[900px] w-[30%]  min-w-[400px] rounded-xl backdrop-blur-[10px] border  bg-[#000000] z-0">
                 <p className="flex w-full h-full text-white font-bold text-md p-10 backdrop-blur-[20px] rounded-xl" >
                     &quot;
                     CourtCheck is a mobile app that helps you find nearby basketball courts, invite friends to play, and request players for pickup games.
