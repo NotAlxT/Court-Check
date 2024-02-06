@@ -11,9 +11,9 @@ export default function Hero2() {
                     </div>
                 </div>
                 <br />
-                <h1 className='bold text-4xl'>Pick-Up Games.</h1>
+                <h1 className='bold text-4xl text-white'>Pick-Up Games.</h1>
                 <br />
-                <h1 className='bold'>Made Easy.</h1>
+                <h1 className='bold text-white'>Made Easy.</h1>
             </div>
 
             <div className="flex reflect w-[300px] h-[300px] rounded-full border bg-[rgb(255,255,255)] z-0 bg-[url('../img/AboutBg.jpeg')] bg-cover bg-center">
