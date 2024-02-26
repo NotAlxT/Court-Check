@@ -11,7 +11,7 @@ const Nav = () => {
         })
     }
     return (
-        <div className=" flex flex-col w-[10%] h-full fixed justify-between z-10 backdrop-blur-[10px]">
+        <div className=" flex flex-col w-[10%] h-full fixed justify-between z-10 backdrop-blur-[10px] bg-gradient-to-l from-transparent via-transparent to-gray-900 ">
 
             <div className="flex h-full flex-col border-r shadow-xl">
 

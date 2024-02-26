@@ -2,7 +2,7 @@ import Download from "./Download";
 
 const Terms = () => {
     return (
-        <div className="flex justify-around flex-row flex-wrap mt-10 mb-10 ml-[150px]">
+        <div className="flex justify-around flex-row flex-wrap ml-[150px] bg-gradient-to-r from-black via-black to-gray-900">
             <div className='fixed flex flex-col right-0 pr-20 pt-10 z-30'>
                 <Download />
             </div>

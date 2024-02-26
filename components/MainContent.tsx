@@ -8,7 +8,7 @@ import Hero2 from './Hero2'
 
 const MainContent: React.FC = () => {
     return (
-        <div className="flex flex-col w-auto ml-[150px] gap-12">
+        <div className="flex flex-col w-auto ml-[150px] gap-12 bg-gradient-to-r from-black via-black to-gray-900 ">
 
             <div className='fixed flex flex-col right-0 pr-20 pt-10 z-30'>
                 <Download />

@@ -7,7 +7,7 @@ import Download from './Download'
 
 const Team = () => {
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center bg-gradient-to-r from-black via-black to-gray-900 ">
             <div className='fixed flex flex-col right-0 pr-20 pt-10 z-30'>
                 <Download />
             </div>

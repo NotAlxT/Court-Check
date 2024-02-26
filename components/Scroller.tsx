@@ -23,40 +23,31 @@ export default function Scroller(props: ScrollerProps) {
             }
         }
     }, []);
-
+    function duplicateAndHide(element:any) {
+        const duplicatedItem = element.cloneNode(true);
+        duplicatedItem.setAttribute("aria-hidden", "true");
+        return duplicatedItem;
+    }
+    
     function addAnimation() {
         if (scrollers) {
             scrollers.forEach((scroller) => {
-                // add data-animated="true" to every `.scroller` on the page
                 scroller.setAttribute("data-animated", "true");
-
-                // Make an array from the elements within `.scroller-inner`
+    
                 const scrollerInner = scroller.querySelector(".scroller__inner") as HTMLElement;
                 const scrollerContent = Array.from(scrollerInner.children);
-
-                // For each item in the array, clone it
-                // add aria-hidden to it
-                // add it into the `.scroller-inner`
-                scrollerContent.forEach((item) => {
-                    const duplicatedItem = item.cloneNode(true) as HTMLElement;
-
-                    duplicatedItem.setAttribute("aria-hidden", "true");
-
-                    scrollerInner.appendChild(duplicatedItem);
-                });
-                scrollerContent.forEach((item) => {
-                    const duplicatedItem = item.cloneNode(true) as HTMLElement;
-
-                    duplicatedItem.setAttribute("aria-hidden", "true");
-
-                    scrollerInner.appendChild(duplicatedItem);
-                });
+    
+                for (let i = 0; i < 3; i++) {
+                    scrollerContent.forEach((item) => {
+                        scrollerInner.appendChild(duplicateAndHide(item));
+                    });
+                }
             });
         }
     }
 
     return (
-        <div className='flex justify-center items-center h-[700px] bg-[rgba(0,0,0,0.1)]'>
+        <div className='flex justify-center items-center h-[700px] bg-[rgba(0,0,0,0.1)] bg-gradient-to-r from-black via-black to-gray-900'>
             <div className="scroller flex justify-center bg-black h-[600px] w-[1200px] border overflow-hidden" data-speed="slow">
                 <ul className='tag-list scroller__inner gap-5 flex flex-row justify-center items-center h-[80%] w-[80%] mt-10 mb-10 transition-all ease-in-out duration-500'>
                     <li className='slide flex h-full w-[300px] hover:scale-105 transition-all ease-in-out duration-500 hover:z-10 z-0 flex-col  justify-center items-center'>
