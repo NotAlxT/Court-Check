@@ -144,7 +144,7 @@ body {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-44%);
+    transform: translateX(-50%);
   }
 }
 

@@ -40,7 +40,7 @@ const Team = () => {
                     </div>
                     <div className="group-hover:pb-10 transition-all duration-500 delay-200">
                         <h1 className="font-semibold text-gray-700">Sai Jannali</h1>
-                        <p className="text-gray-500 text-sm">@Senior-App-Developer</p>
+                        <p className="text-gray-500 text-sm">@App-Developer</p>
                     </div>
                     <div className="flex items-center transition-all duration-500 delay-200 group-hover:bottom-3 -bottom-full absolute gap-2 justify-evenly w-full">
                         <div className="flex gap-3 text-2xl bg-gray-700 text-white p-1 hover:p-2 transition-all duration-500 delay-200 rounded-full shadow-sm">
@@ -64,7 +64,7 @@ const Team = () => {
                     </div>
                     <div className="group-hover:pb-10 transition-all duration-500 delay-200">
                         <h1 className="font-semibold text-gray-700">Jun Jie Chen</h1>
-                        <p className="text-gray-500 text-sm">@Senior-App-Developer</p>
+                        <p className="text-gray-500 text-sm">@App-Developer</p>
                     </div>
                     <div className="flex items-center transition-all duration-500 delay-200 group-hover:bottom-3 -bottom-full absolute gap-2 justify-evenly w-full">
                         <div className="flex gap-3 text-2xl bg-gray-700 text-white p-1 hover:p-2 transition-all duration-500 delay-200 rounded-full shadow-sm">
@@ -89,7 +89,7 @@ const Team = () => {
                     </div>
                     <div className="group-hover:pb-10 transition-all duration-500 delay-200">
                         <h1 className="font-semibold text-gray-700">Alex Tran</h1>
-                        <p className="text-gray-500 text-sm">@Senior-Web-Deveolper</p>
+                        <p className="text-gray-500 text-sm">@Web-Deveolper</p>
                     </div>
                     <div className="flex items-center transition-all duration-500 delay-200 group-hover:bottom-3 -bottom-full absolute gap-2 justify-evenly w-full">
                         <div className="flex gap-3 text-2xl bg-gray-700 text-white p-1 hover:p-2 transition-all duration-500 delay-200 rounded-full shadow-sm">

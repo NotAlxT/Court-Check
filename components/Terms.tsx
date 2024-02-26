@@ -84,11 +84,11 @@ const Terms = () => {
                     <div className="w-[50%] flex self-center">
                         <ol>
                             <li>
-                            ○ We request the user&apos;s current location to showcase a list of basketball courts around them and provide live traffic information such as the number of people currently at a certain court or the availability of a court.
+                            ○ We request the user&apos;s current location to showcase a list of basketball courts around them and provide estimated live traffic information such as the number of people currently at a certain court or the availability of a court.
                             </li>
                             <br />
                             <li>
-                            ○ The app allows users to check-in and check-out of the courts, in which case we request permission of the user&apos;s location data of the court and the time of check-in and check-out.
+                            ○ The app allows users to report the number of players, in which case we request permission of the user&apos;s location data of the court and the time of reporting.
                             </li>
                         </ ol>
                     </div>

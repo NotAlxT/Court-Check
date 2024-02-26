@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from '@/img/CourtCheckHero.png'
+import Hero from '@/img/AboutBg.jpeg'
 
 export default function Loader() {
   return (
@@ -12,7 +12,7 @@ export default function Loader() {
                             <h3 className='font-cursive text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#2C819C] via-white to-orange-600 '>Developed For Players, By Players</h3>
                         </div>
                         <div className=" flex justify-center items-center w-full h-full animate-element3 cursor-none">
-                            <img src={Hero.src} alt='Hero' className='rounded-md' />
+                            <img src={Hero.src} alt='Hero' className='rounded-md h-12' />
                         </div>
                         <div className="flex flex-col justify-center items-center w-full h-full ">
                             <h1 className='text-7xl font-bold leading-14 uppercase bg-clip-text text-transparent bg-gradient-to-r from-[#2C819C] via-white to-orange-600  tracking-wider mb-1'>CourtCheck</h1>
