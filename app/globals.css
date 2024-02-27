@@ -127,7 +127,7 @@ body {
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 30s;
+  --_animation-duration: 150s;
 }
 
 .scroller[data-speed="slow"] {
