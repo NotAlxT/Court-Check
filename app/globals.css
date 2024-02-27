@@ -131,7 +131,7 @@ body {
 }
 
 .scroller[data-speed="slow"] {
-  --_animation-duration: 200s;
+  --_animation-duration: 170s;
 }
 
 .scroller:hover .scroller__inner {
