@@ -8,33 +8,28 @@ import Hero2 from './Hero2'
 
 const MainContent: React.FC = () => {
     return (
-        <div className="flex flex-col w-auto ml-[150px] gap-12 bg-gradient-to-r from-black via-black to-gray-900 ">
+        <div className="flex flex-col w-full h-full bg-gradient-to-r from-black via-black to-gray-900 ">
 
-            <div className='fixed flex flex-col right-0 pr-20 pt-10 z-30'>
+            <div className='flex fixed flex-col right-[10%] pt-10 z-30'>
                 <Download />
             </div>
 
-            <div className="flex flex-row justify-center items-center mt-[10rem]">
-
+            <div className="flex justify-center mt-[10rem]">
                 <Loader />
-
             </div>
 
-            <div>
+            <div >
                 <Hero2 />
             </div>
 
-            
 
-            <div className='pb-10 mt-[100px] '>
+            <div className='pb-10 mt-[10rem]'>
                 <Scroller />
             </div>
 
             <div className='flex justify-center items-center '>
                 <About />
             </div>
-
-            
 
             <div>
                 <Footer />

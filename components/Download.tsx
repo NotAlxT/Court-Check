@@ -13,7 +13,7 @@ export default function Download() {
                     <span className='flex text-black group-hover:text-white'>App Store</span>
                 </a>
 
-                <div className="absolute top-[6.5rem] right-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all ease-in-out duration-500">
+                <div className="absolute top-[6.5rem] right-5 opacity-0 invisible group-hover:opacity-100 group-hover:invisible sm:group-hover:visible transition-all ease-in-out duration-500">
                     <div className="flex flex-row min-w-[400px] min-h-[200px] rounded-3xl bg-white p-10  ">
                         <img className='w-[200px]' src={QR.src} alt="QR Code" />
                         <div className='flex flex-col justify-center items-center p-[10px] flex-wrap w-[200px] gap-5'>
