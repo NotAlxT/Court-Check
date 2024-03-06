@@ -59,7 +59,7 @@ export default function Contact() {
             </div>
 
           </div>
-          <div>
+          <div className='text-white'>
             Or Message Us Here
           </div>
 
@@ -79,7 +79,7 @@ export default function Contact() {
               <textarea className='rounded w-[70%] text-black p-2 h-full' name="message" placeholder='Message...'/>
             </div>
 
-            <button className=' bg-[rgba(36,36,36,0.34)] rounded hover:bg-[rgba(253,253,253,0.7)] flex justify-center items-center w-[50%]' type="submit" value="Send">
+            <button className=' bg-[rgba(36,36,36,0.34)] rounded hover:bg-[rgba(253,253,253,0.7)] flex justify-center items-center w-[50%] text-white' type="submit" value="Send">
               Send
             </button>
             {isMessageVisible && (
