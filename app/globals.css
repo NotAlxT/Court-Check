@@ -118,19 +118,19 @@ body {
     var(--_animation-direction, forwards) linear infinite;
 }
 
-.scroller[data-direction="right"] {
+.scrollerRight {
   --_animation-direction: reverse;
 }
 
-.scroller[data-direction="left"] {
+.scrollerLeft{
   --_animation-direction: forwards;
 }
 
-.scroller[data-speed="fast"] {
-  --_animation-duration: 150s;
+.scrollerFast {
+  --_animation-duration: 70s;
 }
 
-.scroller[data-speed="slow"] {
+.scrollerSlow {
   --_animation-duration: 150s;
 }
 
