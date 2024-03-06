@@ -48,7 +48,7 @@ export default function Scroller(props: ScrollerProps) {
 
     return (
         <div className='flex justify-center items-center h-[700px] bg-[rgba(0,0,0,0.1)] bg-gradient-to-r from-black via-black to-gray-900'>
-            <div className="scroller scrollerLeft scrollerSlow flex justify-center bg-black h-[600px] w-[1200px] overflow-hidden">
+            <div className="scroller flex justify-center bg-black h-[600px] w-[1200px] overflow-hidden">
                 <ul className='tag-list scroller__inner gap-5 flex flex-row justify-center items-center h-[80%] w-[80%] mt-10 mb-10 transition-all ease-in-out duration-500'>
                     <li className='slide flex h-full w-[300px] hover:scale-105 hover:z-10 z-0 flex-col  justify-center items-center'>
                         <p className='flex text-white text-xl'>
