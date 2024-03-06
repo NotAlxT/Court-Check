@@ -2,11 +2,11 @@ import Download from "./Download";
 
 const Terms = () => {
     return (
-        <div className="flex justify-around flex-row flex-wrap ml-[150px] bg-gradient-to-r from-black via-black to-gray-900">
+        <div className="flex justify-around flex-row flex-wrap sm:ml-[150px] bg-gradient-to-r from-black via-black to-gray-900">
             <div className='fixed flex flex-col right-0 pr-20 pt-10 z-30'>
                 <Download />
             </div>
-            <div className="flex w-[45%] min-w-[400px] h-auto overflow-auto bg-[rgba(184,184,184,0.1)] rounded-xl backdrop-blur-[10px] mt-[10rem] p-5 border ">
+            <div className="flex sm:w-[45%] w-[90%] sm:min-w-[400px] h-auto overflow-auto bg-[rgba(184,184,184,0.1)] rounded-xl backdrop-blur-[10px] mt-[10rem] p-5 border ">
                 <div className="text-white flex justify-center items-center flex-col">
                     <h1>Terms of Use:</h1>
                     <br />
@@ -73,8 +73,8 @@ const Terms = () => {
                 </div>
             </div>
 
-            <div className="flex w-[45%] min-w-[400px] h-auto overflow-auto bg-[rgba(255,178,90,0.1)] rounded-xl backdrop-blur-[10px] mt-[10rem] p-5 border">
-                <div className="text-white flex flex-col ">
+            <div className="flex sm:w-[45%] w-[90%] sm:min-w-[400px] h-auto overflow-auto bg-[rgba(253,182,88,0.1)] rounded-xl backdrop-blur-[10px] mt-[10rem] p-5 border ">
+                <div className="text-white flex flex-col items-center">
                     <h1 className="self-center">Privacy Policy:</h1>
                     <br />
                     <br />

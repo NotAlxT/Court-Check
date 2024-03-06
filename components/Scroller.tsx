@@ -23,20 +23,20 @@ export default function Scroller(props: ScrollerProps) {
             }
         }
     }, []);
-    function duplicateAndHide(element:any) {
+    function duplicateAndHide(element: any) {
         const duplicatedItem = element.cloneNode(true);
         duplicatedItem.setAttribute("aria-hidden", "true");
         return duplicatedItem;
     }
-    
+
     function addAnimation() {
         if (scrollers) {
             scrollers.forEach((scroller) => {
                 scroller.setAttribute("data-animated", "true");
-    
+
                 const scrollerInner = scroller.querySelector(".scroller__inner") as HTMLElement;
                 const scrollerContent = Array.from(scrollerInner.children);
-    
+
                 for (let i = 0; i < 3; i++) {
                     scrollerContent.forEach((item) => {
                         scrollerInner.appendChild(duplicateAndHide(item));
@@ -47,42 +47,91 @@ export default function Scroller(props: ScrollerProps) {
     }
 
     return (
-        <div className='flex justify-center items-center h-[700px] bg-[rgba(0,0,0,0.1)] bg-gradient-to-r from-black via-black to-gray-900'>
-            <div className="scroller flex justify-center bg-black h-[600px] w-[1200px] overflow-hidden">
-                <ul className='tag-list scroller__inner gap-5 flex flex-row justify-center items-center h-[80%] w-[80%] mt-10 mb-10 transition-all ease-in-out duration-500'>
-                    <li className='slide flex h-full w-[300px] hover:scale-105 hover:z-10 z-0 flex-col  justify-center items-center'>
-                        <p className='flex text-white text-xl'>
-                            Step 1: Pick A Court
-                        </p>
-                        <br />
-                        <br />
-                        <p className='flex text-white text-xl'>
-                            Step 2: Check In
-                        </p>
-                        <br />
-                        <br />
-                        <p className='flex text-white text-xl'>
-                            Step 3: Ball
-                        </p>
-                        <br />
-                        <br />
-                        <p className='flex text-white text-xl'>
-                            It&apos;s That Easy!
-                        </p>
-                    </li>
-                    <li className='slide flex h-full w-[300px] hover:scale-105 transition-all ease-in-out duration-500 hover:z-10 z-0'>
-                        <img className='rounded-lg' src={img1.src} alt="" />
-                    </li>
+        <div>
+            <div className='sm:flex hidden justify-center items-center h-[700px] bg-[rgba(0,0,0,0.1)] bg-gradient-to-r from-black via-black to-gray-900'>
+                <div className="scroller flex justify-center bg-black h-[600px] w-[1200px] overflow-hidden">
+                    <ul className='tag-list scroller__inner gap-5 flex flex-row justify-center items-center h-[80%] w-[80%] mt-10 mb-10 transition-all ease-in-out duration-500'>
+                        <li className='slide flex h-full w-[300px] hover:scale-105 hover:z-10 z-0 flex-col  justify-center items-center'>
+                            <p className='flex text-white text-xl'>
+                                Step 1: Pick A Court
+                            </p>
+                            <br />
+                            <br />
+                            <p className='flex text-white text-xl'>
+                                Step 2: Check In
+                            </p>
+                            <br />
+                            <br />
+                            <p className='flex text-white text-xl'>
+                                Step 3: Ball
+                            </p>
+                            <br />
+                            <br />
+                            <p className='flex text-white text-xl'>
+                                It&apos;s That Easy!
+                            </p>
+                        </li>
+                        <li className='slide flex h-full w-[300px] hover:scale-105 transition-all ease-in-out duration-500 hover:z-10 z-0'>
+                            <img className='rounded-lg' src={img1.src} alt="" />
+                        </li>
 
-                    <li className='slide flex h-full w-[300px] hover:scale-105 transition-all ease-in-out duration-500 hover:z-10 z-0'>
-                        <img className='rounded-lg' src={img2.src} alt="" />
-                    </li>
+                        <li className='slide flex h-full w-[300px] hover:scale-105 transition-all ease-in-out duration-500 hover:z-10 z-0'>
+                            <img className='rounded-lg' src={img2.src} alt="" />
+                        </li>
 
-                    <li className='slide flex h-full w-[300px] hover:scale-105 transition-all ease-in-out duration-500 hover:z-10 z-0'>
-                        <img className='rounded-lg' src={img4.src} alt="" />
-                    </li>
+                        <li className='slide flex h-full w-[300px] hover:scale-105 transition-all ease-in-out duration-500 hover:z-10 z-0'>
+                            <img className='rounded-lg' src={img4.src} alt="" />
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div className='flex flex-col sm:hidden justify-center items-center'>
+                <ul className='flex flex-row justify-center items-center gap-2'>
+                    <div className='flex w-[30%]'>
+                        <li className=''>
+                            <p className='flex text-white text-xl'>
+                                Step 1: Pick A Court
+                            </p>
+                            <br />
+                            <br />
+                            <p className='flex text-white text-xl'>
+                                Step 2: Check In
+                            </p>
+                            <br />
+                            <br />
+                            <p className='flex text-white text-xl'>
+                                Step 3: Ball
+                            </p>
+                            <br />
+                            <br />
+                            <p className='flex text-white text-xl'>
+                                It&apos;s That Easy!
+                            </p>
+                        </li>
+                    </div>
+                    <div className='flex flex-col w-[50%] gap-1'>
+                        <div className='flex flex-row w-[100%] gap-1'>
+                            <li className='w-[50%] '>
+                                <img className='rounded-lg' src={img1.src} alt="" />
+                            </li>
+                            <li className='w-[50%]'>
+                                <img className='rounded-lg' src={img2.src} alt="" />
+                            </li>
+
+                        </div>
+                        <div className='flex flex-row w-[100%] gap-1'>
+                            <li className='w-[50%]'>
+                                <img className='rounded-lg' src={img4.src} alt="" />
+                            </li>
+                            <li className='w-[50%]'>
+                                <img className='rounded-lg' src={img4.src} alt="" />
+                            </li>
+                        </div>
+
+
+                    </div>
                 </ul>
-
             </div>
         </div>
     );

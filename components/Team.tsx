@@ -8,11 +8,11 @@ import Download from './Download'
 const Team = () => {
     return (
         <div className="flex justify-center bg-gradient-to-r from-black via-black to-gray-900 ">
-            <div className='fixed flex flex-col right-0 pr-20 pt-10 z-30'>
+            <div className='fixed sm:flex hidden flex-col right-0 pr-20 pt-10 z-30'>
                 <Download />
             </div>
-            <h1 className='absolute bottom-10 left-72 bold text-4xl '>Meet the Team.</h1>
-            <div className="flex flex-col min-h-screen relative items-center justify-center w-[50rem] gap-10">
+            <h1 className='sm:absolute hidden bottom-10 left-72 bold text-4xl '>Meet the Team.</h1>
+            <div className="flex flex-col min-h-screen relative items-center justify-center w-[50rem] gap-1 sm:gap-10">
 
                 <div className="w-[50%] rounded-xl overflow-hidden relative text-center p-4 group items-center flex flex-col max-w-sm hover:shadow-2xl transition-all duration-500 shadow-xl bg-[rgba(255,255,255,0.82)]">
                     <div className="text-gray-500 group-hover:scale-105 transition-all">
